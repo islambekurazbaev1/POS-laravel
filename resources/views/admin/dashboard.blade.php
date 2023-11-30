@@ -18,7 +18,7 @@
             <div class="inner">
                 <h3>{{ $kategori }}</h3>
 
-                <p>Total Categories</p>
+                <p>Общая категория</p>
             </div>
             <div class="icon">
                 <i class="fa fa-cube"></i>
@@ -33,7 +33,7 @@
             <div class="inner">
                 <h3>{{ $produk }}</h3>
 
-                <p>Total Product</p>
+                <p>Общий продукт</p>
             </div>
             <div class="icon">
                 <i class="fa fa-cubes"></i>
