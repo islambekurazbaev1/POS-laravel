@@ -45,7 +45,7 @@ Sales Transactions
                 <form class="form-produk">
                     @csrf
                     <div class="form-group row">
-                        <label for="kode_produk" class="col-lg-2">Product Code</label>
+                        <label for="kode_produk" class="col-lg-2">Код продуктa</label>
                         <div class="col-lg-5">
                             <div class="input-group">
                                 <input type="hidden" name="id_penjualan" id="id_penjualan" value="{{ $id_penjualan }}">
@@ -62,12 +62,12 @@ Sales Transactions
                 <table class="table table-stiped table-bordered table-penjualan">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th width="15%">Quantity</th>
-                        <th>Discount</th>
-                        <th>Subtotal</th>
+                        <th>Код</th>
+                        <th>Названия</th>
+                        <th>цена</th>
+                        <th width="15%">Количество</th>
+                        <th>Скидка</th>
+                        <th>Промежуточный итог</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -87,13 +87,13 @@ Sales Transactions
                             <input type="hidden" name="id_member" id="id_member" value="{{ $memberSelected->id_member }}">
 
                             <div class="form-group row">
-                                <label for="totalrp" class="col-lg-2 control-label">Total</label>
+                                <label for="totalrp" class="col-lg-2 control-label">Общий</label>
                                 <div class="col-lg-8">
                                     <input type="text" id="totalrp" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="kode_member" class="col-lg-2 control-label">Member</label>
+                                <label for="kode_member" class="col-lg-2 control-label">Поставщик</label>
                                 <div class="col-lg-8">
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="kode_member" value="{{ $memberSelected->kode_member }}">
@@ -104,7 +104,7 @@ Sales Transactions
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="diskon" class="col-lg-2 control-label">Discount</label>
+                                <label for="diskon" class="col-lg-2 control-label">Скидка</label>
                                 <div class="col-lg-8">
                                     <input type="number" name="diskon" id="diskon" class="form-control" 
                                         value="{{ ! empty($memberSelected->id_member) ? $diskon : 0 }}" 
@@ -112,19 +112,19 @@ Sales Transactions
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="bayar" class="col-lg-2 control-label">Pay</label>
+                                <label for="bayar" class="col-lg-2 control-label">Платить</label>
                                 <div class="col-lg-8">
                                     <input type="text" id="bayarrp" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="diterima" class="col-lg-2 control-label">Received</label>
+                                <label for="diterima" class="col-lg-2 control-label">Полученный</label>
                                 <div class="col-lg-8">
                                     <input type="number" id="diterima" class="form-control" name="diterima" value="{{ $penjualan->diterima ?? 0 }}">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="kembali" class="col-lg-2 control-label">Return</label>
+                                <label for="kembali" class="col-lg-2 control-label">Возвращаться</label>
                                 <div class="col-lg-8">
                                     <input type="text" id="kembali" name="kembali" class="form-control" value="0" readonly>
                                 </div>
@@ -135,7 +135,7 @@ Sales Transactions
             </div>
 
             <div class="box-footer">
-                <button type="submit" class="btn btn-success btn-sm btn-flat pull-right btn-simpan"><i class="fa fa-floppy-o"></i> Save Transaction</button>
+                <button type="submit" class="btn btn-success btn-sm btn-flat pull-right btn-simpan"><i class="fa fa-floppy-o"></i> Сохранить транзакции</button>
             </div>
         </div>
     </div>
@@ -281,7 +281,7 @@ Sales Transactions
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

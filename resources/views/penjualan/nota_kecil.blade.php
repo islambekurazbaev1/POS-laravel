@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Small Note</title>
+    <title>Небольшая заметка</title>
 
     <?php
     $style = '
@@ -55,7 +55,7 @@
     {!! $style !!}
 </head>
 <body onload="window.print()">
-    <button class="btn-print" style="position: absolute; right: 1rem; top: rem;" onclick="window.print()">Print</button>
+    <button class="btn-print" style="position: absolute; right: 1rem; top: rem;" onclick="window.print()">Печать</button>
     <div class="text-center">
         <h3 style="margin-bottom: 5px;">{{ strtoupper($setting->nama_perusahaan) }}</h3>
         <p>{{ strtoupper($setting->alamat) }}</p>
@@ -86,33 +86,33 @@
 
     <table width="100%" style="border: 0;">
         <tr>
-            <td>Total Price:</td>
+            <td>Итоговая цена:</td>
             <td class="text-right">{{ format_uang($penjualan->total_harga) }}</td>
         </tr>
         <tr>
-            <td>Total Item:</td>
+            <td>Итого:</td>
             <td class="text-right">{{ format_uang($penjualan->total_item) }}</td>
         </tr>
         <tr>
-            <td>Discount:</td>
+            <td>Скидка:</td>
             <td class="text-right">{{ format_uang($penjualan->diskon) }}</td>
         </tr>
         <tr>
-            <td>Total Pay:</td>
+            <td>Общая оплата:</td>
             <td class="text-right">{{ format_uang($penjualan->bayar) }}</td>
         </tr>
         <tr>
-            <td>Received:</td>
+            <td>Полученный:</td>
             <td class="text-right">{{ format_uang($penjualan->diterima) }}</td>
         </tr>
         <tr>
-            <td>Return:</td>
+            <td>Возвращаться:</td>
             <td class="text-right">{{ format_uang($penjualan->diterima - $penjualan->bayar) }}</td>
         </tr>
     </table>
 
     <p class="text-center">===================================</p>
-    <p class="text-center">-- THANK YOU --</p>
+    <p class="text-center">-- СПАСИБО --</p>
 
     <script>
         let body = document.body;

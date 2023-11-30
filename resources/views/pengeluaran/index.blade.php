@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Expense List</li>
+    <li class="active">Список расходов</li>
 @endsection
 
 @section('content')
@@ -14,15 +14,15 @@
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <button onclick="addForm('{{ route('pengeluaran.store') }}')" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i> New Expenses Entry</button>
+                <button onclick="addForm('{{ route('pengeluaran.store') }}')" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i> Добавить расходы</button>
             </div>
             <div class="box-body table-responsive">
                 <table class="table table-stiped table-bordered table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Date</th>
-                        <th>Description</th>
-                        <th>Amount</th>
+                        <th>Дата</th>
+                        <th>Описание</th>
+                        <th>Сумма</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -73,7 +73,7 @@
 
     function addForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Add Expenses');
+        $('#modal-form .modal-title').text('Добавить расходы');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -83,7 +83,7 @@
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Edit Expenses');
+        $('#modal-form .modal-title').text('Изминить расходов');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -102,7 +102,7 @@
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

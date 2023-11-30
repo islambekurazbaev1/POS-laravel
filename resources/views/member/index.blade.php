@@ -6,7 +6,7 @@ List of Members
 
 @section('breadcrumb')
     @parent
-    <li class="active">List of Members</li>
+    <li class="active" >Список участников</li>
 @endsection
 
 @section('content')
@@ -14,8 +14,8 @@ List of Members
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <button onclick="addForm('{{ route('member.store') }}')" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i> Add New Member</button>
-                <button onclick="cetakMember('{{ route('member.cetak_member') }}')" class="btn btn-primary btn-flat"><i class="fa fa-id-card"></i> Download Membership Card</button>
+                <button onclick="addForm('{{ route('member.store') }}')" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i>Добавить участника</button>
+                <button onclick="cetakMember('{{ route('member.cetak_member') }}')" class="btn btn-primary btn-flat"><i class="fa fa-id-card">Скачать членскую карту</i> </button>
             </div>
             <div class="box-body table-responsive">
                 <form action="" method="post" class="form-member">
@@ -26,10 +26,10 @@ List of Members
                                 <input type="checkbox" name="select_all" id="select_all">
                             </th>
                             <th width="5%">#</th>
-                            <th>Code</th>
-                            <th>Name</th>
-                            <th>Telephone</th>
-                            <th>Address</th>
+                            <th>Код</th>
+                            <th>Имя</th>
+                            <th>Телефон</th>
+                            <th>Адрес</th>
                             <th width="15%"><i class="fa fa-cog"></i></th>
                         </thead>
                     </table>
@@ -87,7 +87,7 @@ List of Members
 
     function addForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Add Member');
+        $('#modal-form .modal-title').text('Добавить усастников');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -97,7 +97,7 @@ List of Members
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Edit Member');
+        $('#modal-form .modal-title').text('Изминить учатника');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -117,7 +117,7 @@ List of Members
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

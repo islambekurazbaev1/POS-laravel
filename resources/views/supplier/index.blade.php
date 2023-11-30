@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Supplier List</li>
+    <li class="active">Список поставщиков</li>
 @endsection
 
 @section('content')
@@ -20,9 +20,9 @@
                 <table class="table table-stiped table-bordered table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Name</th>
-                        <th>Telephone</th>
-                        <th>Address</th>
+                        <th>Имя</th>
+                        <th>Телефон</th>
+                        <th>Адрес</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -103,7 +103,7 @@
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

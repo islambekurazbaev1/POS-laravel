@@ -15,9 +15,9 @@
         <div class="box">
             <div class="box-header with-border">
                 <div class="btn-group">
-                    <button onclick="addForm('{{ route('produk.store') }}')" class="btn btn-success  btn-flat"><i class="fa fa-plus-circle"></i> Add New Product</button>
-                    <button onclick="deleteSelected('{{ route('produk.delete_selected') }}')" class="btn btn-danger  btn-flat"><i class="fa fa-trash"></i> Delete</button>
-                    <button onclick="cetakBarcode('{{ route('produk.cetak_barcode') }}')" class="btn btn-warning  btn-flat"><i class="fa fa-barcode"></i> Print Barcode</button>
+                    <button onclick="addForm('{{ route('produk.store') }}')" class="btn btn-success  btn-flat"><i class="fa fa-plus-circle"></i>Добавить продукт</button>
+                    <button onclick="deleteSelected('{{ route('produk.delete_selected') }}')" class="btn btn-danger  btn-flat"><i class="fa fa-trash"></i>Удалить</button>
+                    <button onclick="cetakBarcode('{{ route('produk.cetak_barcode') }}')" class="btn btn-warning  btn-flat"><i class="fa fa-barcode"></i> Распечатать штрих-код</button>
                 </div>
             </div>
             <div class="box-body table-responsive">
@@ -29,14 +29,14 @@
                                 <input type="checkbox" name="select_all" id="select_all">
                             </th>
                             <th width="5%">#</th>
-                            <th>Code</th>
-                            <th>Name</th>
-                            <th>Category</th>
-                            <th>Brand</th>
-                            <th>Purchase Price</th>
-                            <th>Selling Price</th>
-                            <th>Discount</th>
-                            <th>Stock</th>
+                            <th>Код</th>
+                            <th>Названия</th>
+                            <th>Категория</th>
+                            <th>Марка</th>
+                            <th>Цена покупки</th>
+                            <th>Цена продажи</th>
+                            <th>Скидка</th>
+                            <th>Запас</th>
                             <th width="15%"><i class="fa fa-cog"></i></th>
                         </thead>
                     </table>
@@ -98,7 +98,7 @@
 
     function addForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Add Product');
+        $('#modal-form .modal-title').text('Добавить продукт');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -108,7 +108,7 @@
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Edit Product');
+        $('#modal-form .modal-title').text('Изминить продукт');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -132,7 +132,7 @@
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'
@@ -149,7 +149,7 @@
 
     function deleteSelected(url) {
         if ($('input:checked').length > 1) {
-            if (confirm('Yakin ingin menghapus data terpilih?')) {
+            if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
                 $.post(url, $('.form-produk').serialize())
                     .done((response) => {
                         table.ajax.reload();

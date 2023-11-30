@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Sales List</li>
+    <li class="active">Список продаж</li>
 @endsection
 
 @section('content')
@@ -17,13 +17,13 @@
                 <table class="table table-stiped table-bordered table-penjualan table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Date</th>
-                        <th>MemberCode</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
-                        <th>Discount</th>
-                        <th>Total Pay</th>
-                        <th>Cashier</th>
+                        <th>Дата</th>
+                        <th>Код поставщика</th>
+                        <th>Количество</th>
+                        <th>Итоговая цена</th>
+                        <th>Скидка</th>
+                        <th>Общая оплата</th>
+                        <th>Кассир</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -84,7 +84,7 @@
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

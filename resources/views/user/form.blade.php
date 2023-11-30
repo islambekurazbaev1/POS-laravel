@@ -12,7 +12,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group row">
-                        <label for="name" class="col-lg-3 col-lg-offset-1 control-label">Name</label>
+                        <label for="name" class="col-lg-3 col-lg-offset-1 control-label">Имя</label>
                         <div class="col-lg-6">
                             <input type="text" name="name" id="name" class="form-control" required autofocus>
                             <span class="help-block with-errors"></span>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password" class="col-lg-3 col-lg-offset-1 control-label">Password</label>
+                        <label for="password" class="col-lg-3 col-lg-offset-1 control-label">Пароль</label>
                         <div class="col-lg-6">
                             <input type="password" name="password" id="password" class="form-control" 
                             required
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password_confirmation" class="col-lg-3 col-lg-offset-1 control-label">Confirm Password</label>
+                        <label for="password_confirmation" class="col-lg-3 col-lg-offset-1 control-label">Подтвердите пароль</label>
                         <div class="col-lg-6">
                             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" 
                                 required
@@ -45,8 +45,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-sm btn-flat btn-success"><i class="fa fa-save"></i> Save</button>
-                    <button type="button" class="btn btn-sm btn-flat btn-danger" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Cancel</button>
+                    <button class="btn btn-sm btn-flat btn-success"><i class="fa fa-save"></i> Сохранить</button>
+                    <button type="button" class="btn btn-sm btn-flat btn-danger" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Отмена</button>
                 </div>
             </div>
         </form>

@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Purchase List</li>
+    <li class="active">Список покупок</li>
 @endsection
 
 @section('content')
@@ -14,21 +14,21 @@
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <button onclick="addForm()" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i> Add New Purchase</button>
+                <button onclick="addForm()" class="btn btn-success btn-flat"><i class="fa fa-plus-circle"></i> Добавить покупку</button>
                 @empty(! session('id_pembelian'))
-                <a href="{{ route('pembelian_detail.index') }}" class="btn btn-info btn-xs btn-flat"><i class="fa fa-pencil"></i> Active Transaction</a>
+                <a href="{{ route('pembelian_detail.index') }}" class="btn btn-info btn-xs btn-flat"><i class="fa fa-pencil"></i> Активная транзакция</a>
                 @endempty
             </div>
             <div class="box-body table-responsive">
                 <table class="table table-stiped table-bordered table-pembelian table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Date</th>
-                        <th>Supplier</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
-                        <th>Discount</th>
-                        <th>Total Pay</th>
+                        <th>Дата</th>
+                        <th>Поставщик</th>
+                        <th>Количество</th>
+                        <th>Общая сумма</th>
+                        <th>Скидка</th>
+                        <th>Общая оплата</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -94,7 +94,7 @@
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

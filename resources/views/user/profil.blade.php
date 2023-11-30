@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Edit Profile</li>
+    <li class="active">Изминить профиль</li>
 @endsection
 
 @section('content')
@@ -18,17 +18,17 @@
                 <div class="box-body">
                     <div class="alert alert-info alert-dismissible" style="display: none;">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                        <i class="icon fa fa-check"></i> Changes saved successfully
+                        <i class="icon fa fa-check"></i> Изменения успешно сохранены
                     </div>
                     <div class="form-group row">
-                        <label for="name" class="col-lg-2 control-label">Name</label>
+                        <label for="name" class="col-lg-2 control-label">Имя</label>
                         <div class="col-lg-6">
                             <input type="text" name="name" class="form-control" id="name" required autofocus value="{{ $profil->name }}">
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="foto" class="col-lg-2 control-label">Profile</label>
+                        <label for="foto" class="col-lg-2 control-label">Профиль</label>
                         <div class="col-lg-4">
                             <input type="file" name="foto" class="form-control" id="foto"
                                 onchange="preview('.tampil-foto', this.files[0])">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="old_password" class="col-lg-2 control-label">Old Password</label>
+                        <label for="old_password" class="col-lg-2 control-label">Старый пароль</label>
                         <div class="col-lg-6">
                             <input type="password" name="old_password" id="old_password" class="form-control" 
                             minlength="6">
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password" class="col-lg-2 control-label">Password</label>
+                        <label for="password" class="col-lg-2 control-label">Новый пароль</label>
                         <div class="col-lg-6">
                             <input type="password" name="password" id="password" class="form-control" 
                             minlength="6">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="box-footer text-right">
-                    <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Save Changes</button>
+                    <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i>Сохранить изменения</button>
                 </div>
             </form>
         </div>

@@ -33,7 +33,7 @@ Purchase
 
 @section('breadcrumb')
     @parent
-    <li class="active">Purchase Transaction</li>
+    <li class="active">Транзакция покупки</li>
 @endsection
 
 @section('content')
@@ -43,15 +43,15 @@ Purchase
             <div class="box-header with-border">
                 <table>
                     <tr>
-                        <td>Supplier</td>
+                        <td>поставщик</td>
                         <td>: {{ $supplier->nama }}</td>
                     </tr>
                     <tr>
-                        <td>Telephone</td>
+                        <td>телефон</td>
                         <td>: {{ $supplier->telepon }}</td>
                     </tr>
                     <tr>
-                        <td>Address</td>
+                        <td>Адрес</td>
                         <td>: {{ $supplier->alamat }}</td>
                     </tr>
                 </table>
@@ -61,7 +61,7 @@ Purchase
                 <form class="form-produk">
                     @csrf
                     <div class="form-group row">
-                        <label for="kode_produk" class="col-lg-2">Product Code</label>
+                        <label for="kode_produk" class="col-lg-2">Продукт код</label>
                         <div class="col-lg-5">
                             <div class="input-group">
                                 <input type="hidden" name="id_pembelian" id="id_pembelian" value="{{ $id_pembelian }}">
@@ -78,11 +78,11 @@ Purchase
                 <table class="table table-stiped table-bordered table-pembelian table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th width="15%">Quantity</th>
-                        <th>Subtotal</th>
+                        <th>Код</th>
+                        <th>Названия</th>
+                        <th>Цена</th>
+                        <th width="15%">Количество</th>
+                        <th>Промежуточный итог</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -107,13 +107,13 @@ Purchase
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="diskon" class="col-lg-2 control-label">Discount</label>
+                                <label for="diskon" class="col-lg-2 control-label">Скидка</label>
                                 <div class="col-lg-8">
                                     <input type="number" name="diskon" id="diskon" class="form-control" value="{{ $diskon }}">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="bayar" class="col-lg-2 control-label">Pay</label>
+                                <label for="bayar" class="col-lg-2 control-label">Платить</label>
                                 <div class="col-lg-8">
                                     <input type="text" id="bayarrp" class="form-control">
                                 </div>
@@ -124,7 +124,7 @@ Purchase
             </div>
 
             <div class="box-footer">
-                <button type="submit" class="btn btn-primary btn-sm btn-flat pull-right btn-simpan"><i class="fa fa-floppy-o"></i> Save Transaction</button>
+                <button type="submit" class="btn btn-primary btn-sm btn-flat pull-right btn-simpan"><i class="fa fa-floppy-o"></i>Сохранить транзакцию</button>
             </div>
         </div>
     </div>
@@ -238,7 +238,7 @@ Purchase
     }
 
     function deleteData(url) {
-        if (confirm('Are you sure you want to delete selected data?')) {
+        if (confirm('Вы уверены, что хотите удалить выбранные данные?')) {
             $.post(url, {
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'delete'

@@ -50,12 +50,12 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Code</th>
-                <th>Name</th>
-                <th>Unit Price</th>
-                <th>Quantity</th>
-                <th>Discount</th>
-                <th>Subtotal</th>
+                <th>Код</th>
+                <th>Названия</th>
+                <th>Цена за единицу</th>
+                <th>Количество</th>
+                <th>Скидка</th>
+                <th>Промежуточный итог</th>
             </tr>
         </thead>
         <tbody>
@@ -73,23 +73,23 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="6" class="text-right"><b>Total Price</b></td>
+                <td colspan="6" class="text-right"><b>Итоговая цена</b></td>
                 <td class="text-right"><b>{{ format_uang($penjualan->total_harga) }}</b></td>
             </tr>
             <tr>
-                <td colspan="6" class="text-right"><b>Discount</b></td>
+                <td colspan="6" class="text-right"><b>Скидка</b></td>
                 <td class="text-right"><b>{{ format_uang($penjualan->diskon) }}</b></td>
             </tr>
             <tr>
-                <td colspan="6" class="text-right"><b>Total Pay</b></td>
+                <td colspan="6" class="text-right"><b>Общая оплата</b></td>
                 <td class="text-right"><b>{{ format_uang($penjualan->bayar) }}</b></td>
             </tr>
             <tr>
-                <td colspan="6" class="text-right"><b>Received</b></td>
+                <td colspan="6" class="text-right"><b>Полученный</b></td>
                 <td class="text-right"><b>{{ format_uang($penjualan->diterima) }}</b></td>
             </tr>
             <tr>
-                <td colspan="6" class="text-right"><b>Return</b></td>
+                <td colspan="6" class="text-right"><b>Возвращать</b></td>
                 <td class="text-right"><b>{{ format_uang($penjualan->diterima - $penjualan->bayar) }}</b></td>
             </tr>
         </tfoot>
@@ -97,9 +97,9 @@
 
     <table width="100%">
         <tr>
-            <td><b>Thank you for shopping. We hope to see you again!</b></td>
+            <td><b>Спасибо за покупки. Надеемся увидеть вас снова!</b></td>
             <td class="text-center">
-                Cashier
+                Кассир
                 <br>
                 <br>
                 {{ auth()->user()->name }}

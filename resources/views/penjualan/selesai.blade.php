@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Sales Transactions</li>
+    <li class="active">Сделки купли-продажи</li>
 @endsection
 
 @section('content')
@@ -16,14 +16,14 @@
             <div class="box-body">
                 <div class="alert alert-success alert-dismissible">
                     <i class="fa fa-check icon"></i>
-                    Transaction Data has been completed.
+                    Данные транзакции были завершены.
                 </div>
             </div>
             <div class="box-footer">
                 @if ($setting->tipe_nota == 1)
-                <button class="btn btn-warning btn-flat" onclick="notaKecil('{{ route('transaksi.nota_kecil') }}', 'Nota Kecil')">Print Invoice</button>
+                <button class="btn btn-warning btn-flat" onclick="notaKecil('{{ route('transaksi.nota_kecil') }}', 'Nota Kecil')">Распечатать счет-фактуру</button>
                 @else
-                <button class="btn btn-warning btn-flat" onclick="notaBesar('{{ route('transaksi.nota_besar') }}', 'Nota PDF')">Print Invoice</button>
+                <button class="btn btn-warning btn-flat" onclick="notaBesar('{{ route('transaksi.nota_besar') }}', 'Nota PDF')">Распечатать счет</button>
                 @endif
                 <a href="{{ route('transaksi.baru') }}" class="btn btn-primary btn-flat">New Transaction</a>
             </div>

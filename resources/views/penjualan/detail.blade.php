@@ -4,17 +4,17 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Sales Details</h4>
+                <h4 class="modal-title">Детали продажи</h4>
             </div>
             <div class="modal-body">
                 <table class="table table-striped table-bordered table-detail table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
+                        <th>Код</th>
+                        <th>названия</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Промежуточный итог</th>
                     </thead>
                 </table>
             </div>

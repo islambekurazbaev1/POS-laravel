@@ -10,9 +10,9 @@
                 <table class="table table-striped table-bordered table-produk table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Purchase Price</th>
+                        <th>Код</th>
+                        <th>Названия</th>
+                        <th>Цена покупки</th>
                         <th><i class="fa fa-cog"></i></th>
                     </thead>
                     <tbody>
@@ -26,7 +26,7 @@
                                     <a href="#" class="btn btn-primary btn-xs btn-flat"
                                         onclick="pilihProduk('{{ $item->id_produk }}', '{{ $item->kode_produk }}')">
                                         <i class="fa fa-check-circle"></i>
-                                        Select
+                                        Выбрать
                                     </a>
                                 </td>
                             </tr>

@@ -61,7 +61,7 @@
                 @if ($showingRecoveryCodes)
                     <x-jet-confirms-password wire:then="regenerateRecoveryCodes">
                         <x-jet-secondary-button class="mr-3">
-                            {{ __('Regenerate Recovery Codes') }}
+                            {{ __('') }}
                         </x-jet-secondary-button>
                     </x-jet-confirms-password>
                 @else

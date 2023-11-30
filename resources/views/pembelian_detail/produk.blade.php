@@ -4,15 +4,15 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Select Product</h4>
+                <h4 class="modal-title">Выберите продукт</h4>
             </div>
             <div class="modal-body">
                 <table class="table table-striped table-bordered table-produk table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Purchase Price</th>
+                        <th>Код</th>
+                        <th>Названия</th>
+                        <th>Цена покупки</th>
                         <th><i class="fa fa-cog"></i></th>
                     </thead>
                     <tbody>
