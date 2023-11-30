@@ -5,11 +5,11 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Reporting Period</h4>
+                    <h4 class="modal-title">Отчетный период</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group row">
-                        <label for="tanggal_awal" class="col-lg-2 col-lg-offset-1 control-label">Start Date</label>
+                        <label for="tanggal_awal" class="col-lg-2 col-lg-offset-1 control-label">Дата начала</label>
                         <div class="col-lg-6">
                             <input type="text" name="tanggal_awal" id="tanggal_awal" class="form-control datepicker" required autofocus
                                 value="{{ request('tanggal_awal') }}"
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="tanggal_akhir" class="col-lg-2 col-lg-offset-1 control-label">End Date</label>
+                        <label for="tanggal_akhir" class="col-lg-2 col-lg-offset-1 control-label">Дата окончания</label>
                         <div class="col-lg-6">
                             <input type="text" name="tanggal_akhir" id="tanggal_akhir" class="form-control datepicker" required
                                 value="{{ request('tanggal_akhir') ?? date('Y-m-d') }}"
@@ -28,8 +28,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-sm btn-flat btn-success"><i class="fa fa-save"></i> Save</button>
-                    <button type="button" class="btn btn-sm btn-flat btn-danger" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Cancel</button>
+                    <button class="btn btn-sm btn-flat btn-success"><i class="fa fa-save"></i>Сохранить</button>
+                    <button type="button" class="btn btn-sm btn-flat btn-danger" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Отмена</button>
                 </div>
             </div>
         </form>

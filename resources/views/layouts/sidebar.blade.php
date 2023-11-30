@@ -9,7 +9,7 @@
             </div>
             <div class="pull-left info">
                 <p>{{ auth()->user()->name }}</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="#"><i class="fa fa-circle text-success"></i>Онлайн</a>
             </div>
         </div>
         
@@ -18,25 +18,25 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li>
                 <a href="{{ route('dashboard') }}">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    <i class="fa fa-dashboard"></i> <span>Статистика</span>
                 </a>
             </li>
 
             @if (auth()->user()->level == 1)
-            <li class="header">MASTER</li>
+            <li class="header">ВЛАДЕЛЕЦ</li>
             <li>
                 <a href="{{ route('kategori.index') }}">
-                    <i class="fa fa-cube"></i> <span>Category</span>
+                    <i class="fa fa-cube"></i> <span>Категорий</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('produk.index') }}">
-                    <i class="fa fa-cubes"></i> <span>Product</span>
+                    <i class="fa fa-cubes"></i> <span>Продукты</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('member.index') }}">
-                    <i class="fa fa-id-card"></i> <span>Member</span>
+                    <i class="fa fa-id-card"></i> <span>Член</span>
                 </a>
             </li>
             <li>
@@ -44,59 +44,59 @@
                     <i class="fa fa-truck"></i> <span>Supplier</span>
                 </a>
             </li>
-            <li class="header">TRANSACTION</li>
+            <li class="header">Операция</li>
             <li>
                 <a href="{{ route('pengeluaran.index') }}">
-                    <i class="fa fa-money"></i> <span>Expenses</span>
+                    <i class="fa fa-money"></i> <span>Расходы</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('pembelian.index') }}">
-                    <i class="fa fa-download"></i> <span>Purchase</span>
+                    <i class="fa fa-download"></i> <span>Покупка</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('penjualan.index') }}">
-                    <i class="fa fa-dollar"></i> <span>Sales List</span>
+                    <i class="fa fa-dollar"></i> <span>Список продаж</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('transaksi.baru') }}">
-                    <i class="fa fa-cart-plus"></i> <span>New Transaction</span>
+                    <i class="fa fa-cart-plus"></i> <span>Новая транзакция</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('transaksi.index') }}">
-                    <i class="fa fa-cart-arrow-down"></i> <span>Active Transaction</span>
+                    <i class="fa fa-cart-arrow-down"></i> <span>Активная транзакция</span>
                 </a>
             </li>
             
-            <li class="header">REPORT</li>
+            <li class="header">ОТЧЕТ</li>
             <li>
                 <a href="{{ route('laporan.index') }}">
-                    <i class="fa fa-file-pdf-o"></i> <span>Income</span>
+                    <i class="fa fa-file-pdf-o"></i> <span>Доход</span>
                 </a>
             </li>
-            <li class="header">SYSTEM</li>
+            <li class="header">Система</li>
             <li>
                 <a href="{{ route('user.index') }}">
-                    <i class="fa fa-users"></i> <span>User</span>
+                    <i class="fa fa-users"></i> <span>Пользователь</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route("setting.index") }}">
-                    <i class="fa fa-cogs"></i> <span>Settings</span>
+                    <i class="fa fa-cogs"></i> <span>Настройки</span>
                 </a>
             </li>
             @else
             <li>
                 <a href="{{ route('transaksi.baru') }}">
-                    <i class="fa fa-cart-plus"></i> <span>New Transaction</span>
+                    <i class="fa fa-cart-plus"></i> <span>Новая транзакция</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('transaksi.index') }}">
-                    <i class="fa fa-cart-arrow-down"></i> <span>Active Transaction</span>
+                    <i class="fa fa-cart-arrow-down"></i> <span>Активная транзакция</span>
                 </a>
             </li>
             @endif

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Income Report {{ tanggal_indonesia($tanggalAwal, false) }} -- {{ tanggal_indonesia($tanggalAkhir, false) }}
+Отчет о доходах {{ tanggal_indonesia($tanggalAwal, false) }} -- {{ tanggal_indonesia($tanggalAkhir, false) }}
 @endsection
 
 @push('css')
@@ -10,7 +10,7 @@ Income Report {{ tanggal_indonesia($tanggalAwal, false) }} -- {{ tanggal_indones
 
 @section('breadcrumb')
     @parent
-    <li class="active">Report</li>
+    <li class="active">Отчет</li>
 @endsection
 
 @section('content')
@@ -18,18 +18,18 @@ Income Report {{ tanggal_indonesia($tanggalAwal, false) }} -- {{ tanggal_indones
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <button onclick="updatePeriode()" class="btn btn-primary btn-flat"><i class="fa fa-plus-circle"></i> Change Date</button>
-                <!-- <a href="{{ route('laporan.export_pdf', [$tanggalAwal, $tanggalAkhir]) }}" target="_blank" class="btn btn-success btn-flat"><i class="fa fa-file-excel-o"></i> Export PDF</a> -->
+                <button onclick="updatePeriode()" class="btn btn-primary btn-flat"><i class="fa fa-plus-circle"></i> Изменить дату</button>
+                <a href="{{ route('laporan.export_pdf', [$tanggalAwal, $tanggalAkhir]) }}" target="_blank" class="btn btn-success btn-flat"><i class="fa fa-file-excel-o"></i> Экспорт PDF</a>
             </div>
             <div class="box-body table-responsive">
                 <table class="table table-stiped table-bordered table-hover">
                     <thead>
                         <th width="5%">#</th>
-                        <th>Date</th>
-                        <th>Sale</th>
-                        <th>Purchase</th>
-                        <th>Expenses</th>
-                        <th>Income</th>
+                        <th>Дата</th>
+                        <th>Продажи</th>
+                        <th>Покупка</th>
+                        <th>Расходы</th>
+                        <th>Доход</th>
                     </thead>
                 </table>
             </div>

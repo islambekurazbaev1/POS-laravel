@@ -17,7 +17,7 @@
     <nav class="navbar navbar-static-top">
         <!-- Sidebar toggle button-->
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Переключение навигации</span>
         </a>
 
         <div class="navbar-custom-menu">
@@ -42,11 +42,11 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="{{ route('user.profil') }}" class="btn btn-primary btn-flat">My Profile</a>
+                                <a href="{{ route('user.profil') }}" class="btn btn-primary btn-flat">Мой профиль</a>
                             </div>
                             <div class="pull-right">
                                 <a href="#" class="btn btn-danger btn-flat"
-                                    onclick="$('#logout-form').submit()"><i class="fa fa-power-off"></i> Logout</a>
+                                    onclick="$('#logout-form').submit()"><i class="fa fa-power-off"></i> Выход</a>
                             </div>
                         </li>
                     </ul>

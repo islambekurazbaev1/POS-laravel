@@ -23,7 +23,7 @@
                 @enderror
             </div>
             <div class="form-group has-feedback @error('password') has-error @enderror">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" class="form-control" placeholder="Пароль" required>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 @error('password')
                     <span class="help-block">{{ $message }}</span>
@@ -32,16 +32,16 @@
                 @enderror
             </div>
             <div class="row">
-                <div class="col-xs-8">
+                <!-- <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
                             <input type="checkbox"> Remember Me
                         </label>
                     </div>
-                </div>
+                </div> -->
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-success btn-block btn-flat">Log In</button>
+                    <button type="submit" class="btn btn-success btn-block btn-flat">Войти</button>
                 </div>
                 <!-- /.col -->
             </div>

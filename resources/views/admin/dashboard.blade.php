@@ -6,7 +6,7 @@
 
 @section('breadcrumb')
     @parent
-    <li class="active">Dashboard</li>
+    <li class="active">Статистика</li>
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
             <div class="icon">
                 <i class="fa fa-cube"></i>
             </div>
-            <a href="{{ route('kategori.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('kategori.index') }}" class="small-box-footer">Смотреть <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col --><!-- visit "codeastro" for more projects! -->
@@ -38,7 +38,7 @@
             <div class="icon">
                 <i class="fa fa-cubes"></i>
             </div>
-            <a href="{{ route('produk.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('produk.index') }}" class="small-box-footer">Смотреть <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -48,12 +48,12 @@
             <div class="inner">
                 <h3>{{ $member }}</h3>
 
-                <p>Total Member</p>
+                <p>Всего участников</p>
             </div>
             <div class="icon">
                 <i class="fa fa-id-card"></i>
             </div>
-            <a href="{{ route('member.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('member.index') }}" class="small-box-footer">Смотреть <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -63,12 +63,12 @@
             <div class="inner">
                 <h3>{{ $supplier }}</h3>
 
-                <p>Total Supplier</p>
+                <p>Общий поставщик</p>
             </div>
             <div class="icon">
                 <i class="fa fa-truck"></i>
             </div>
-            <a href="{{ route('supplier.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('supplier.index') }}" class="small-box-footer">Смотреть <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -82,12 +82,12 @@
             <div class="inner">
                 <h3>{{ $penjualan }}</h3>
 
-                <p>Sales</p>
+                <p>Продажи</p>
             </div>
             <div class="icon">
                 <i class="fa fa-dollar"></i>
             </div>
-            <a href="{{ route('penjualan.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('penjualan.index') }}" class="small-box-footer">Смотреть<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -98,12 +98,12 @@
             <div class="inner">
                 <h3>{{ $pengeluaran }}</h3>
 
-                <p>Total Expenses</p>
+                <p>Общие расходы</p>
             </div>
             <div class="icon">
                 <i class="fa fa-dollar"></i>
             </div>
-            <a href="{{ route('pengeluaran.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('pengeluaran.index') }}" class="small-box-footer">Смотреть<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -114,12 +114,12 @@
             <div class="inner">
                 <h3>{{ $pembelian }}</h3>
 
-                <p>Total Purchase</p>
+                <p>Общая сумма покупки</p>
             </div>
             <div class="icon">
                 <i class="fa fa-dollar"></i>
             </div>
-            <a href="{{ route('pembelian.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('pembelian.index') }}" class="small-box-footer">Смотреть<i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -131,7 +131,7 @@
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">Income Chart {{ tanggal_indonesia($tanggal_awal, false) }} - {{ tanggal_indonesia($tanggal_akhir, false) }}</h3>
+                <h3 class="box-title">График доходов {{ tanggal_indonesia($tanggal_awal, false) }} - {{ tanggal_indonesia($tanggal_akhir, false) }}</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
