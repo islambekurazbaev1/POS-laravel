@@ -70,7 +70,7 @@ class PembelianDetailController extends Controller
     {
         $produk = Produk::where('id_produk', $request->id_produk)->first();
         if (! $produk) {
-            return response()->json('Data failed to save', 400);
+            return response()->json('Данные не удалось сохранить!', 400);
         }
 
         $detail = new PembelianDetail();
@@ -81,7 +81,7 @@ class PembelianDetailController extends Controller
         $detail->subtotal = $produk->harga_beli;
         $detail->save();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
     // visit "codeastro" for more projects!
     public function update(Request $request, $id)

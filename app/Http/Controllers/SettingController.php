@@ -44,6 +44,6 @@ class SettingController extends Controller
 
         $setting->update();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 }

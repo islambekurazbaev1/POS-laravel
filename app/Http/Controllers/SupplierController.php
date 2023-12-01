@@ -51,7 +51,7 @@ class SupplierController extends Controller
     {
         $supplier = Supplier::create($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -89,7 +89,7 @@ class SupplierController extends Controller
     {
         $supplier = Supplier::find($id)->update($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**

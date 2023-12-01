@@ -58,7 +58,7 @@ class UserController extends Controller
         $user->foto = '/img/user.png';
         $user->save();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -101,7 +101,7 @@ class UserController extends Controller
             $user->password = bcrypt($request->password);
         $user->update();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -133,10 +133,10 @@ class UserController extends Controller
                 if ($request->password == $request->password_confirmation) {
                     $user->password = bcrypt($request->password);
                 } else {
-                    return response()->json('Confirm password is incorrect', 422);
+                    return response()->json('Подтвердите пароль неверный!', 422);
                 }
             } else {
-                return response()->json('The old password is incorrect', 422);
+                return response()->json('Старый пароль неверен!', 422);
             }
         }
 

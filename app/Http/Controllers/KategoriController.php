@@ -58,7 +58,7 @@ class KategoriController extends Controller
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->save();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -98,7 +98,7 @@ class KategoriController extends Controller
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->update();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**

@@ -81,7 +81,7 @@ class PenjualanDetailController extends Controller
     {
         $produk = Produk::where('id_produk', $request->id_produk)->first();
         if (! $produk) {
-            return response()->json('Data failed to save', 400);
+            return response()->json('Данные не удалось сохранить!', 400);
         }
 
         $detail = new PenjualanDetail();
@@ -93,7 +93,7 @@ class PenjualanDetailController extends Controller
         $detail->subtotal = $produk->harga_jual - ($produk->diskon / 100 * $produk->harga_jual);;
         $detail->save();
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
     // visit "codeastro" for more projects!
     public function update(Request $request, $id)
@@ -120,9 +120,9 @@ class PenjualanDetailController extends Controller
             'totalrp' => format_uang($total),
             'bayar' => $bayar,
             'bayarrp' => format_uang($bayar),
-            'terbilang' => ucwords(terbilang($bayar). ' Dollar'),
+            'terbilang' => ucwords(terbilang($bayar). ' Сум'),
             'kembalirp' => format_uang($kembali),
-            'kembali_terbilang' => ucwords(terbilang($kembali). ' Dollar'),
+            'kembali_terbilang' => ucwords(terbilang($kembali). ' Сум'),
         ];
 
         return response()->json($data);

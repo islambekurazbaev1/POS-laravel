@@ -57,7 +57,7 @@ class PengeluaranController extends Controller
     {
         $pengeluaran = Pengeluaran::create($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -95,7 +95,7 @@ class PengeluaranController extends Controller
     {
         $pengeluaran = Pengeluaran::find($id)->update($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**

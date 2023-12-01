@@ -83,7 +83,7 @@ class ProdukController extends Controller
 
         $produk = Produk::create($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**
@@ -122,7 +122,7 @@ class ProdukController extends Controller
         $produk = Produk::find($id);
         $produk->update($request->all());
 
-        return response()->json('Data saved successfully', 200);
+        return response()->json('Данные успешно сохранены!', 200);
     }
 
     /**

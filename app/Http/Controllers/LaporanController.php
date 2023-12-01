@@ -57,7 +57,7 @@ class LaporanController extends Controller
             'tanggal' => '',
             'penjualan' => '',
             'pembelian' => '',
-            'pengeluaran' => 'Total Income',
+            'pengeluaran' => 'Общая прибыль',
             'pendapatan' => format_uang($total_pendapatan),
         ];
 
