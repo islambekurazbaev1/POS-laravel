@@ -72,41 +72,41 @@ function terbilang($angka)
 {
     $angka = abs($angka);
     $baca = [
-        '', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
-        'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'
+        '', 'Один', 'Два', 'Три', 'Четыре', 'Пять', 'Шесть', 'Семь', 'Восемь', 'Девять', 'Десять',
+        'Одиннадцать', 'Двенадцать', 'Тринадцать', 'Четырнадцать', 'Пятнадцать', 'Шестнадцать', 'Семнадцать', 'Восемнадцать', 'Девятнадцать'
     ];
 
     $tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
 
     if ($angka < 20) {
         $terbilang = ' ' . $baca[$angka];
-    } elseif ($angka < 100) {
+    } elseif ($angka < 100) {   
         $terbilang = ' ' . $tens[(int)($angka / 10)];
         if ($angka % 10 !== 0) {
             $terbilang .= ' ' . $baca[$angka % 10];
         }
     } elseif ($angka < 1000) {
-        $terbilang = ' ' . $baca[(int)($angka / 100)] . ' Hundred';
+        $terbilang = ' ' . $baca[(int)($angka / 100)] . ' Сто';
         if ($angka % 100 !== 0) {
             $terbilang .= ' and' . terbilang($angka % 100);
         }
     } elseif ($angka < 1000000) {
-        $terbilang = terbilang((int)($angka / 1000)) . ' Thousand';
+        $terbilang = terbilang((int)($angka / 1000)) . ' Тысяча';
         if ($angka % 1000 !== 0) {
             $terbilang .= terbilang($angka % 1000);
         }
     } elseif ($angka < 1000000000) {
-        $terbilang = terbilang((int)($angka / 1000000)) . ' Million';
+        $terbilang = terbilang((int)($angka / 1000000)) . ' Миллион';
         if ($angka % 1000000 !== 0) {
             $terbilang .= terbilang($angka % 1000000);
         }
     } elseif ($angka < 1000000000000) {
-        $terbilang = terbilang((int)($angka / 1000000000)) . ' Billion';
+        $terbilang = terbilang((int)($angka / 1000000000)) . ' Миллиард';
         if ($angka % 1000000000 !== 0) {
             $terbilang .= terbilang($angka % 1000000000);
         }
     } else {
-        $terbilang = 'Number is too large to convert.';
+        $terbilang = 'Число слишком велико для преобразования.';
     }
 
     return $terbilang;
@@ -115,10 +115,10 @@ function terbilang($angka)
 function tanggal_indonesia($tgl, $tampil_hari = true)
 {
     $nama_hari  = array(
-        'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+        'Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'
     );
     $nama_bulan = array(1 =>
-        'January', 'February', 'March', 'April', 'May', 'VI', '.VII', '.VIII', 'IX', '.X', '.XI', '.XII'
+        'I', '.II', '.III', '.IV', '.V', '.VI', '.VII', '.VIII', 'IX', '.X', '.XI', '.XII'
     );
 
     $tahun   = substr($tgl, 0, 4);

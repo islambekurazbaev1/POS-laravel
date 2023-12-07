@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Product List
+    Список продуктов
 @endsection
 
 @section('breadcrumb')
     @parent
-    <li class="active">Product List</li>
+    <li class="active">Список продуктов</li>
 @endsection
 
 @section('content')
@@ -85,7 +85,7 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                         return;
                     });
             }
@@ -126,7 +126,7 @@
                 $('#modal-form [name=stok]').val(response.stok);
             })
             .fail((errors) => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }
@@ -141,7 +141,7 @@
                     table.ajax.reload();
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
@@ -155,22 +155,22 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to delete data');
+                        alert('Невозможно удалить данные');
                         return;
                     });
             }
         } else {
-            alert('Select the data to delete');
+            alert('Выберите данные для удаления');
             return;
         }
     }
 
     function cetakBarcode(url) {
         if ($('input:checked').length < 1) {
-            alert('Select the data to print');
+            alert('Выберите данные для печати');
             return;
-        } else if ($('input:checked').length < 3) {
-            alert('Select at least 3 data to print');
+        } else if ($('input:checked').length < 1) {
+            alert('Выберите не менее 1 данных для печати.');
             return;
         } else {
             $('.form-produk')

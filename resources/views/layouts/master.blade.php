@@ -52,7 +52,7 @@
                 </h1>
                 <ol class="breadcrumb">
                     @section('breadcrumb')
-                        <li><a href="{{ url('/') }}"><i class="fa fa-dashboard"></i> Домой</a></li>
+                        <li><a href="{{ url('/') }}"><i class="fa fa-dashboard"></i>Домой</a></li>
                     @show
                 </ol>
             </section>

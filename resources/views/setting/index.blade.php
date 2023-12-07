@@ -142,7 +142,7 @@
                 $('[rel=icon]').attr('href', `{{ url('/') }}/${response.path_logo}`);
             })
             .fail(errors => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }

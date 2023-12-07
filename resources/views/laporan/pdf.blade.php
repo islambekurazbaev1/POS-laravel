@@ -11,9 +11,9 @@
 <body>
     <h3 class="text-center">Отчет о доходах</h3>
     <h4 class="text-center">
-        Date {{ tanggal_indonesia($awal, false) }}
+        Дата {{ tanggal_indonesia($awal, false) }}
         s/d
-        Date {{ tanggal_indonesia($akhir, false) }}
+        Дата {{ tanggal_indonesia($akhir, false) }}
     </h4>
 
     <table class="table table-striped table-hover">

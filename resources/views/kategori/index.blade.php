@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Category List
+    Список категорий
 @endsection
 
 @section('breadcrumb')
@@ -61,7 +61,7 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                         return;
                     });
             }
@@ -92,7 +92,7 @@
                 $('#modal-form [name=nama_kategori]').val(response.nama_kategori);
             })
             .fail((errors) => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }
@@ -107,7 +107,7 @@
                     table.ajax.reload();
                 })
                 .fail((errors) => {
-                    alert('Cannot delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
