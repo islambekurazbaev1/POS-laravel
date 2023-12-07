@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Expense List
+Список расходов
 @endsection
 
 @section('breadcrumb')

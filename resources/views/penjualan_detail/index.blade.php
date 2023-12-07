@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Sales Transactions
+Сделки купли-продажи
 @endsection
 
 @push('css')
@@ -33,7 +33,7 @@ Sales Transactions
 
 @section('breadcrumb')
     @parent
-    <li class="active">Sales Transactions</li>
+    <li class="active">Сделки купли-продажи</li>
 @endsection
 
 @section('content')

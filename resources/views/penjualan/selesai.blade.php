@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Sales Transactions
+Сделки купли-продажи
 @endsection
 
 @section('breadcrumb')
@@ -25,7 +25,7 @@
                 @else
                 <button class="btn btn-warning btn-flat" onclick="notaBesar('{{ route('transaksi.nota_besar') }}', 'Nota PDF')">Распечатать счет</button>
                 @endif
-                <a href="{{ route('transaksi.baru') }}" class="btn btn-primary btn-flat">New Transaction</a>
+                <a href="{{ route('transaksi.baru') }}" class="btn btn-primary btn-flat">Новая транзакция</a>
             </div>
         </div>
     </div>

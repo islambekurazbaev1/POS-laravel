@@ -41,7 +41,7 @@
             </li>
             <li>
                 <a href="{{ route('supplier.index') }}">
-                    <i class="fa fa-truck"></i> <span>Supplier</span>
+                    <i class="fa fa-truck"></i> <span>Доставщик</span>
                 </a>
             </li>
             <li class="header">Операция</li>

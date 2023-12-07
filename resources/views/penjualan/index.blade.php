@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Sales List
+Список продаж
 @endsection
 
 @section('breadcrumb')

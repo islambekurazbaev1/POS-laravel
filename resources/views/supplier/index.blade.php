@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Supplier List
+Список поставщиков
 @endsection
 
 @section('breadcrumb')

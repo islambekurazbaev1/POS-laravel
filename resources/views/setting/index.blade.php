@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Settings
+Настройки
 @endsection
 
 @section('breadcrumb')
@@ -112,7 +112,7 @@
                     }, 3000);
                 })
                 .fail(errors => {
-                    alert('Unable to save data');
+                    alert('Невозможно сохранить данные');
                     return;
                 });
             }

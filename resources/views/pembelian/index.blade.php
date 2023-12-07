@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Purchase List
+    Список покупок
 @endsection
 
 @section('breadcrumb')

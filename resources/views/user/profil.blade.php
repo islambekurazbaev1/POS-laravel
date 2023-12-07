@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Edit Profile
+Редактировать профиль
 @endsection
 
 @section('breadcrumb')
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password_confirmation" class="col-lg-2 control-label">Confirm Password</label>
+                        <label for="password_confirmation" class="col-lg-2 control-label">Подтвердите пароль</label>
                         <div class="col-lg-6">
                             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" 
                                 data-match="#password">

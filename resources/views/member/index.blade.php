@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-List of Members
+Список участников
 @endsection
 
 @section('breadcrumb')
@@ -111,7 +111,7 @@ List of Members
                 $('#modal-form [name=alamat]').val(response.alamat);
             })
             .fail((errors) => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }
@@ -126,7 +126,7 @@ List of Members
                     table.ajax.reload();
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
@@ -134,7 +134,7 @@ List of Members
 
     function cetakMember(url) {
         if ($('input:checked').length < 1) {
-            alert('Select the data to print');
+            alert('Выберите данные для печати');
             return;
         } else {
             $('.form-member')

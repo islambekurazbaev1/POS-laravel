@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    User List
+Список пользователей
 @endsection
 
 @section('breadcrumb')
