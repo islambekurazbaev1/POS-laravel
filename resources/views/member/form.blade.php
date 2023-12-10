@@ -14,12 +14,12 @@
                     <div class="form-group row">
                         <label for="nama" class="col-lg-2 col-lg-offset-1 control-label">Имя</label>
                         <div class="col-lg-6">
-                            <input type="text" name="nama" id="nama" class="form-control" required autofocus>
+                            <input type="text" name="nama" id="nama" placeholder="Имя" class="form-control" required autofocus>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="telepon" class="col-lg-2 col-lg-offset-1 control-label">Телефон</label>
+                        <label for="telepon" class="col-lg-2 col-lg-offset-1 control-label" placeholder="Телефон">Телефон</label>
                         <div class="col-lg-6">
                             <input type="text" name="telepon" id="telepon" class="form-control" required>
                             <span class="help-block with-errors"></span>
@@ -28,7 +28,7 @@
                     <div class="form-group row">
                         <label for="alamat" class="col-lg-2 col-lg-offset-1 control-label">Адрес</label>
                         <div class="col-lg-6">
-                            <textarea name="alamat" id="alamat" rows="3" class="form-control"></textarea>
+                            <textarea name="alamat" id="alamat" rows="3" class="form-control" placeholder="улица. Дружба №3"></textarea>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
