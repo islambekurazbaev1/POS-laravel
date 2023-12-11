@@ -172,12 +172,12 @@
 
             if (jumlah < 1) {
                 $(this).val(1);
-                alert('The number cannot be less than 1');
+                alert('Число не может быть меньше 1');
                 return;
             }
             if (jumlah > 10000) {
                 $(this).val(10000);
-                alert('The number cannot exceed 10000');
+                alert('Число не может превышать 10000.');
                 return;
             }
 
@@ -192,7 +192,7 @@
                     });
                 })
                 .fail(errors => {
-                    alert('Unable to save data');
+                    alert('Невозможно сохранить данные');
                     return;
                 });
         });
@@ -232,7 +232,7 @@
                 table.ajax.reload(() => loadForm($('#diskon').val()));
             })
             .fail(errors => {
-                alert('Unable to save data');
+                alert('Невозможно сохранить данные');
                 return;
             });
     }
@@ -247,7 +247,7 @@
                     table.ajax.reload(() => loadForm($('#diskon').val()));
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
@@ -266,7 +266,7 @@
                 $('.tampil-terbilang').text(response.terbilang);
             })
             .fail(errors => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             })
     }

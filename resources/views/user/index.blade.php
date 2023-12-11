@@ -62,7 +62,7 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                         return;
                     });
             }
@@ -71,7 +71,7 @@
 
     function addForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Add User');
+        $('#modal-form .modal-title').text('Добавить пользователя!');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -83,7 +83,7 @@
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Edit User');
+        $('#modal-form .modal-title').text('Изменить пользователя');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -98,7 +98,7 @@
                 $('#modal-form [name=email]').val(response.email);
             })
             .fail((errors) => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }
@@ -113,7 +113,7 @@
                     table.ajax.reload();
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }

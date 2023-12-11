@@ -64,7 +64,7 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                         return;
                     });
             }
@@ -111,7 +111,7 @@
                     table.ajax.reload();
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
