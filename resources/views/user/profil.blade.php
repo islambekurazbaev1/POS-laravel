@@ -105,7 +105,7 @@
                     if (errors.status == 422) {
                         alert(errors.responseJSON); 
                     } else {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                     }
                     return;
                 });
