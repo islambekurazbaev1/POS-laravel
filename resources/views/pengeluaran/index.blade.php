@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Список расходовw
+Список расходов
 @endsection
 
 @section('breadcrumb')
@@ -83,7 +83,7 @@
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Изминить расходов');
+        $('#modal-form .modal-title').text('Измeнить расходов');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -96,7 +96,7 @@
                 $('#modal-form [name=nominal]').val(response.nominal);
             })
             .fail((errors) => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             });
     }

@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="kode_member" class="col-lg-2 control-label">Поставщик</label>
+                                <label for="kode_member" class="col-lg-2 control-label">Доставщик</label>
                                 <div class="col-lg-8">
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="kode_member" value="{{ $memberSelected->kode_member }}">
@@ -117,14 +117,14 @@
                                     <input type="text" id="bayarrp" class="form-control" readonly>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="diterima" class="col-lg-2 control-label">Полученный</label>
+                            <div class="form-group row" >
+                                <label for="diterima" class="col-lg-2 control-label" style="margin-right: 15px">Полученный</label>
                                 <div class="col-lg-8">
-                                    <input type="number" id="diterima" class="form-control" name="diterima" value="{{ $penjualan->diterima ?? 0 }}">
+                                    <input type="number" id="diterima" class="form-control" placeholder="Полученный" name="diterima" value="{{ $penjualan->diterima ?? 0 }}">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="kembali" class="col-lg-2 control-label">Возвращаться</label>
+                                <label for="kembali" class="col-lg-2 control-label" style="margin-right: 20px">Возвращаться</label>
                                 <div class="col-lg-8">
                                     <input type="text" id="kembali" name="kembali" class="form-control" value="0" readonly>
                                 </div>
@@ -208,7 +208,7 @@
                     });
                 })
                 .fail(errors => {
-                    alert('Unable to save data');
+                    alert('Невозможно сохранить данные');
                     return;
                 });
         });
@@ -258,7 +258,7 @@
                 table.ajax.reload(() => loadForm($('#diskon').val()));
             })
             .fail(errors => {
-                alert('Unable to save data');
+                alert('Невозможно сохранить данные');
                 return;
             });
     }
@@ -290,7 +290,7 @@
                     table.ajax.reload(() => loadForm($('#diskon').val()));
                 })
                 .fail((errors) => {
-                    alert('Unable to delete data');
+                    alert('Невозможно удалить данные');
                     return;
                 });
         }
@@ -315,7 +315,7 @@
                 }
             })
             .fail(errors => {
-                alert('Unable to display data');
+                alert('Невозможно отобразить данные');
                 return;
             })
     }

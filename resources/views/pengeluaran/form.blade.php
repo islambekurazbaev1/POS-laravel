@@ -14,14 +14,14 @@
                     <div class="form-group row">
                         <label for="deskripsi" class="col-lg-2 col-lg-offset-1 control-label">  Описание</label>
                         <div class="col-lg-6">
-                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" required autofocus>
+                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Описание" required autofocus>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="nominal" class="col-lg-2 col-lg-offset-1 control-label">Сумма</label>
                         <div class="col-lg-6">
-                            <input type="number" name="nominal" id="nominal" class="form-control" required>
+                            <input type="number" name="nominal" id="nominal" class="form-control" placeholder="Сумма" required>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>

@@ -74,7 +74,7 @@
                         table.ajax.reload();
                     })
                     .fail((errors) => {
-                        alert('Unable to save data');
+                        alert('Невозможно сохранить данные');
                         return;
                     });
             }

@@ -28,7 +28,7 @@
                     <div class="form-group row">
                         <label for="alamat" class="col-lg-2 col-lg-offset-1 control-label">Адрес</label>
                         <div class="col-lg-6">
-                            <textarea name="alamat" id="alamat" rows="3" class="form-control" placeholder="улица. Дружба №3"></textarea>
+                            <textarea name="alamat" id="alamat" rows="3" class="form-control" placeholder="Город Нукус, улица. Дружба №3"></textarea>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
