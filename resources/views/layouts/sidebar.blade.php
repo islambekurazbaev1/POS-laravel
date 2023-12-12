@@ -36,7 +36,7 @@
             </li>
             <li>
                 <a href="{{ route('member.index') }}">
-                    <i class="fa fa-id-card"></i> <span>Член</span>
+                    <i class="fa fa-id-card"></i> <span>Сотрудник</span>
                 </a>
             </li>
             <li>
